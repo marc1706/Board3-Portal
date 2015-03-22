@@ -89,6 +89,14 @@ services:
         tags:
             - { name: board3.portal.module }
 
+    board3.portal.module.featured_content:
+        class: board3\portal\modules\featured_content
+        arguments:
+            - @config
+            - @template
+        tags:
+            - { name: board3.portal.module }
+
     board3.portal.module.forumlist:
         class: board3\portal\modules\forumlist
         arguments:
