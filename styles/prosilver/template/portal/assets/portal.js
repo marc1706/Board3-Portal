@@ -41,12 +41,13 @@ phpbb.b3p_fix_right_column_margin = function() {
 	}
 };
 
-$(document).ready(function() {
+$(function() {
 	portal_right_width = $('#portal-right').width();
 	phpbb.b3p_fix_right_column_margin();
 	$(window).resize(function() {
 		phpbb.b3p_fix_right_column_margin();
 	});
+	$('#main-slider').liquidSlider();
 });
 
 })(jQuery); // Avoid conflicts with other libraries
