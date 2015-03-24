@@ -47,7 +47,12 @@ $(function() {
 	$(window).resize(function() {
 		phpbb.b3p_fix_right_column_margin();
 	});
-	$('#main-slider').liquidSlider();
+
+	// Start slider for featured content module
+	$('#main-slider').liquidSlider({
+		autoSlide: true,
+		autoHeight: false
+	});
 });
 
 })(jQuery); // Avoid conflicts with other libraries
